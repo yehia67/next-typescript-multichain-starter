@@ -1,4 +1,4 @@
-## Getting Started
+## Multi-chain frontend started kit
 
 Create a project using this example:(Coming Soon)
 
