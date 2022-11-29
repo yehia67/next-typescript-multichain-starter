@@ -42,8 +42,14 @@ const Home: NextPage = () => {
             className={styles.icon}
             alt="sol"
           />
+          <Image
+            width={75}
+            height={75}
+            src="/ethereum.png"
+            className={styles.icon}
+            alt="sol"
+          />
         </div>
-        <h1 className={styles.h1}>Solana, meet thirdweb 👋</h1>
         <p className={styles.explain}>
           Explore what you can do with thirdweb&rsquo;s brand new{" "}
           <b>
@@ -58,9 +64,41 @@ const Home: NextPage = () => {
           </b>
           .
         </p>
+        <div className={styles.multiWallets}>
+          <div className={styles.walletBtn}>
+            <WalletMultiButtonDynamic>Solana Wallet</WalletMultiButtonDynamic>
+          </div>
+          <div className={styles.walletBtn}>
+            <ConnectWallet />
+          </div>
+        </div>
+        <div className={styles.grid}>
+          <a href="https://portal.thirdweb.com/" className={styles.card}>
+            <h2>Portal &rarr;</h2>
+            <p>
+              Guides, references and resources that will help you build with
+              thirdweb.
+            </p>
+          </a>
 
-        <WalletMultiButtonDynamic />
-        <ConnectWallet />
+          <a href="https://thirdweb.com/dashboard" className={styles.card}>
+            <h2>Dashboard &rarr;</h2>
+            <p>
+              Deploy, configure and manage your smart contracts from the
+              dashboard.
+            </p>
+          </a>
+
+          <a
+            href="https://portal.thirdweb.com/templates"
+            className={styles.card}
+          >
+            <h2>Templates &rarr;</h2>
+            <p>
+              Discover and clone template projects showcasing thirdweb features.
+            </p>
+          </a>
+        </div>
       </div>
     </>
   );
